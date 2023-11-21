@@ -32,6 +32,7 @@ def run():
         
         model.fit(X_train,y_train)
         pred_values = model.predict(X_test)
+        print(pred_values)
         
         acc = metrics.accuracy_score(pred_values , y_test)
         acc_score.append(acc)
